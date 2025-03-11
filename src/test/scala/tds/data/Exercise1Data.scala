@@ -1,5 +1,7 @@
-import Exercise1.{BondProduct, Product, RefKey, SecurityProduct, Source, Transaction}
+package tds.data
+
 import org.scalacheck.Gen
+import tds.Exercise1._
 
 trait Exercise1Data {
 

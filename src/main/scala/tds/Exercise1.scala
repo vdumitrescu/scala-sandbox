@@ -1,3 +1,5 @@
+package tds
+
 object Exercise1 {
 
   sealed trait Source
