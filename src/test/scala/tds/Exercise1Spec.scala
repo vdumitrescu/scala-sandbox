@@ -1,9 +1,12 @@
-import Exercise1._
+package tds
+
 import org.scalacheck.Gen
 import org.scalatest.Assertion
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 import org.scalatestplus.scalacheck.ScalaCheckDrivenPropertyChecks
+import tds.Exercise1._
+import tds.data.Exercise1Data
 
 class Exercise1Spec extends AnyFlatSpec with ScalaCheckDrivenPropertyChecks with Matchers with Exercise1Data {
   "getRefKey" should "return alphaBondKey for Alpha Bonds" in {
@@ -40,7 +43,7 @@ class Exercise1Spec extends AnyFlatSpec with ScalaCheckDrivenPropertyChecks with
 
   it should "return None for Gamma transactions without refKey" in {
     // TODO: need a generator for this test case
-    ???
+    validate(???, None)
   }
 
   private def validate(gen: Gen[Transaction], expected: Option[String]): Assertion =
