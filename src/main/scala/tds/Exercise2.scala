@@ -22,6 +22,6 @@ object Exercise2 {
     tradeService: TradeService
   ) {
     // TODO: implement a method that fetches trade data from TradeService for a given Source
-    def fetchTradeData(source: Source)(implicit ec: ExecutionContext): Future[Seq[Trade]] = ???
+    def fetchTradeData(source: Source): Future[Seq[Trade]] = ???
   }
 }
